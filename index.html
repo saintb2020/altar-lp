@@ -743,14 +743,13 @@
   .gallery-single {
     position: relative;
     overflow: hidden;
-    max-height: 580px;
   }
 
   .gallery-single img {
     width: 100%;
     max-width: 100%;
     display: block;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center center;
     filter: grayscale(25%) brightness(0.78) sepia(15%) contrast(1.05);
     transition: filter 0.8s ease, transform 0.8s ease;
@@ -781,7 +780,7 @@
 
   @media (max-width: 600px) {
     .gallery-single {
-      max-height: 320px;
+      /* max-height removed - show full image */
     }
   }
 
