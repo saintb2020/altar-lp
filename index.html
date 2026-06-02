@@ -743,17 +743,15 @@
   .gallery-single {
     position: relative;
     overflow: hidden;
-    max-height: 520px;
-    /* トリミング：右上のバルーンをカット */
-    clip-path: inset(0 12% 0 0);
+    max-height: 580px;
   }
 
   .gallery-single img {
-    width: 112%;
-    max-width: none;
+    width: 100%;
+    max-width: 100%;
     display: block;
     object-fit: cover;
-    object-position: left center;
+    object-position: center center;
     filter: grayscale(25%) brightness(0.78) sepia(15%) contrast(1.05);
     transition: filter 0.8s ease, transform 0.8s ease;
   }
@@ -784,7 +782,6 @@
   @media (max-width: 600px) {
     .gallery-single {
       max-height: 320px;
-      clip-path: inset(0 8% 0 0);
     }
   }
 
