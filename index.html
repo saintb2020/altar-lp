@@ -743,13 +743,14 @@
   .gallery-single {
     position: relative;
     overflow: hidden;
+    max-height: 580px;
   }
 
   .gallery-single img {
     width: 100%;
     max-width: 100%;
     display: block;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center center;
     filter: grayscale(25%) brightness(0.78) sepia(15%) contrast(1.05);
     transition: filter 0.8s ease, transform 0.8s ease;
@@ -780,7 +781,7 @@
 
   @media (max-width: 600px) {
     .gallery-single {
-      /* max-height removed - show full image */
+      max-height: 320px;
     }
   }
 
@@ -1021,7 +1022,8 @@
       <p style="font-size:13px; font-weight:300; line-height:2.2; color:rgba(250,247,242,0.55); letter-spacing:0.05em;">
         本イベントは審査制です。申し込み後、審査の結果をご連絡します。<br>
         営業・勧誘・出会い目的の参加はお断りしています。<br>
-        参加費は審査通過後、事前振り込みをお願いします。
+        参加費は審査通過後、事前振り込みをお願いします。<br>
+        本イベントはARMY CHURCH（教会）が主催しています。宗教勧誘を目的とした場ではありませんが、主催団体の性質上、信仰に関する話題が自然に出ることがあります。
       </p>
     </div>
   </div>
